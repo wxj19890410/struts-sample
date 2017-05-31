@@ -1,0 +1,52 @@
+html {
+	height: 100%
+}
+
+body {
+	height: 100%;
+	background: white;
+}
+
+iframe {
+	width: 100%;
+	border: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#page-wrapper {
+	padding: 0 0;
+}
+
+.form-group .control-label {
+	text-align: right;
+}
+
+.form-group .control-label:after {
+	content: "\00a0";
+}
+
+.form-group .control-label.required:after {
+	content: "*";
+	color: red;
+}
+
+.table-header {
+	margin: 15px 0;
+}
+
+.table-header .search {
+	display: inline-block;
+	margin: 0 20px 0 0;
+	vertical-align: middle;
+	width: 180px;
+}
+
+.table-header .actionBar {
+	text-align: right;
+}
