@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DayByDay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.3.css"/>
+    <script src="../lib/jquery-1.11.1.js"></script>
+    <script src="../lib/jquery.mobile-1.4.3.js"></script>
+</head>
+
+<body>
+    <!-- 已完成的计划 按完成度显示 -->
+    <div data-role="page" id="plane_done_degree">
+        <div data-role="header" data-position="fixed"> 
+            <h1>已结束的计划</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="star" class="ui-btn-active">完成度查看</a></li>
+                    <li><a href="#" data-icon="gear" onclick="changePage('plane_done_date')">结束时间查看</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="collapsible">
+                <h4>完成度90%</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h4>完成度80%</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h4>完成度50%</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h4>完成度低于50%</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+                <h4>已终止</h4>
+                <ul data-role="listview">
+                   <li><a href="#" onclick="changePage('plane_ing')">Bill</a></li>
+                </ul>
+            </div>
+        </div>
+         <div data-role="footer">
+             <div data-role="navbar">
+                <ul>
+                    <a href="#"data-icon="gear" onclick="changePage('index')">返回总览</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 已完成的计划 按完成时间显示 -->
+    <div data-role="page" id="plane_done_date">
+        <div data-role="header" data-position="fixed"> 
+            <h1>已结束的计划</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="star" onclick="changePage('plane_done_degree')">完成度查看</a></li>
+                    <li><a href="#" data-icon="gear" class="ui-btn-active">结束时间查看</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="collapsible">
+            <h4>三天内完成</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                  <li><a href="#"  onclick="changePage('plane_on')" >Angela</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+            <h4>七天内完成</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                  <li><a href="#"  onclick="changePage('plane_on')" >Angela</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+            <h4>两周内完成</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                  <li><a href="#"  onclick="changePage('plane_on')" >Angela</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+            <h4>本月完成</h4>
+                <ul data-role="listview">
+                  <li><a href="#"  onclick="changePage('plane_on')">Adam</a></li>
+                  <li><a href="#"  onclick="changePage('plane_on')" >Angela</a></li>
+                </ul>
+            </div>
+
+            <div data-role="collapsible">
+            <h4>已终止</h4>
+                <ul data-role="listview">
+                   <li><a href="#" onclick="changePage('plane_ing')">Bill</a></li>
+                   <li><a href="#" onclick="changePage('plane_ing')">Bob</a></li>
+                </ul>
+            </div>
+        </div>
+         <div data-role="footer">
+             <a href="#" class="ui-btn ui-corner-all" data-rel="back">返回</a>
+        </div>
+    </div> 
+    <!-- 计划 end -->
+
+</body>
+</html>
